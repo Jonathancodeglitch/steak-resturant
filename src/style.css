@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --white-color:#fff;
+    --steel-black:#333533;
+    --show-case-font: 'Roboto', sans-serif;
+    --unique-font: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--show-case-font);
+    background-image: url(./img/steak.jpg);
+    background-repeat: no-repeat;
+   background-position: top;
+   background-size: cover;
+   background-attachment: fixed;
+   
+ 
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+#container{
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin:  0 auto;
+    display: flex;
+   flex-direction: column;
+   gap:  7rem;
+
+    color: var(--white-color);
+}
+
+/* nav */
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   height: 3rem;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 2.9rem;
+    align-items: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+   
+}
+
+.navbar ul li{
+    padding: 9px;
+    overflow: hidden;
+}
+
+.navbar ul li:hover{
+    font-weight: bolder;
+   border-bottom: 2px solid  rgb(163, 161, 161);
+}
+
+.logo{
+font-family: var(--unique-font);
+font-size: 1.7rem;
+
+}
+
+
+/* showxase */
+
+.showcase{
+    display: flex;
+    flex-direction: column;
+   background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    line-height: 0.40;
+    padding: 20px;
+}
+
+
+.showcase .intro{
+    font-size: 4rem;
+    line-height: 1;
+}
+
+/* menu */
+
+.steak{
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.lg{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 5rem;
+   margin-top: 40px;
+
+}
+.steak-name{
+    text-align: left;
+}
+
+.steak-name p{
+    color: rgb(163, 161, 161);
+}
+.sml{
+    display: flex;
+   flex-direction: column;
+  
+   
+}
+.underline{
+    border-bottom: 2px solid rgb(163, 161, 161) ;
+    height: 2px;
+    width: 6rem;
+}
+
+.steak-menu-log .underline{
+    width: 100%;
+    border-bottom: 3px dotted rgb(163, 161, 161) ;
+}
+
+/* about */
+.showcase .about{
+    font-size: 2rem;
+    line-height: 1.2;
+}
